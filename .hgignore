@@ -1,0 +1,10 @@
+syntax: glob
+*.beam
+*.pyc
+*.swp
+*.tmp
+.DS_Store
+
+syntax: regexp
+^erlang_proxy/src/test/log/.*$
+^erlang_proxy/src/include/vsn\.hrl$
