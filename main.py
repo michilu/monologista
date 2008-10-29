@@ -49,7 +49,7 @@ class UserTimelineHandler(webapp.RequestHandler):
     user_timeline = Status.all().filter('account =', account)
 
     template_values = {
-      'user_timeline': home_timeline,
+      'user_timeline': user_timeline,
     }
 
     path = os.path.join(os.path.dirname(__file__), 'user_timeline.html')
